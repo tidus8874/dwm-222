@@ -1,0 +1,15 @@
+[Common]
+RegisterValue=BMT_HSPA_Modem_2
+
+[Device]
+ATHWID=USB\Vid_2001&Pid_7E35&Rev_0228&MI_02
+RAWHWID=USB\Vid_2001&Pid_7E35&Rev_0228&MI_03
+MDMHWID=USB\Vid_2001&Pid_7E35&MI_01
+CDROMID=USBSTOR\CdRom________Mass_Storage____0000
+NDISID=USB\Vid_2001&Pid_7E35&MI_04
+
+[GeneralSetting]
+NewSmsAlert=.\sound\newtextmsg.wav
+SMSStatusReport=1
+FirstInstall=1
+ConnectType=1

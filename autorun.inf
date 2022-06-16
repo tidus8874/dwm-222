@@ -1,0 +1,4 @@
+[autorun]
+label=D-Link Modem
+ICON=.\StartModem.exe,0
+open=.\StartModem.exe

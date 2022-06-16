@@ -1,0 +1,17 @@
+Title D-Link Connection Manager
+Version 1.0
+Description 
+DefaultLocation /
+DeleteWarning 
+
+### Package Flags
+
+NeedsAuthorization YES
+Required NO
+Relocatable NO
+RequiresReboot YES
+UseUserMask NO
+OverwritePermissions NO
+AllowBackRev YES
+RootVolumeOnly NO
+OnlyUpdateInstalledLanguages NO

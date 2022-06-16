@@ -1,0 +1,33 @@
+#!/bin/sh
+rm -fr /var/db/receipts/com.kuyitongxun.*
+rm -fr /var/db/receipts/com.MediaTek.*
+rm -fr /Library/Receipts/*.pkg
+rm -fr /System/Library/Extensions/BMUSBCDCACM*
+rm -fr /System/Library/Extensions/BMUSBCDCACM212.44.0.kext
+rm -fr /System/Library/Extensions/BMUSBCDCACM212.48.0.kext
+rm -fr /System/Library/Extensions/BMUSBCDCACM212.50.0.kext
+rm -rf /System/Library/LaunchDaemons/start.plist 
+rm -fr /System/Library/Extensions/KYTXMTKMassStorage.kext
+rm -fr /System/Library/Extensions/KYTXMTKUSBModemCDC.kext
+rm -fr /System/Library/Extensions/KYTXMTKUSBModemData.kext
+rm -fr /System/Library/Extensions/KYTXMTKMassStorage64.kext
+rm -fr /System/Library/Extensions/KYTXMTKUSBModemCDC64.kext
+rm -fr /System/Library/Extensions/KYTXMTKUSBModemData64.kext
+rm -fr /Library/Modem\ Scripts/KYTX_HSPA_Modem 
+rm -fr /Applications/D-Link\ Connection\ Manager
+rm -fr $HOME/Documents/USB\ Modem\ User\ Data
+rm -fr /Applications/MMX\ 377G\ 3G\ USB\ Manager
+rm -fr /Applications/MMX\ 210G\ 3G\ USB\ Manager
+rm -fr /Applications/Beetel\ 3G\ Data\ Card
+rm -fr /bin/salestracking
+rm -fr /Applications/Chiavetta\ Internet
+rm -fr /Applications/Chiavetta\ Internet\ 42.2
+rm -fr /Library/Application\ Support/BM/KYTXStartUpItemApp
+rm -fr /Library/LaunchAgents/cn.com.bm.startupitem.plist
+rm -fr /Applications/VIVO\ INTERNET
+rm -fr /Applications/Claro
+rm -rf $HOME/Desktop/Claro.app
+rm -rf $HOME/Desktop/Chiavetta\ Internet\ 42.2.app
+rm -rf /Applications/Airtel
+rm -fr /Library/Receipts/MYWAVE\ FW3010A.pkg
+exit 0

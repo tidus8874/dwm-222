@@ -1,0 +1,35 @@
+#!/bin/sh
+system_Leopard=10.5
+system_SnowLeopard=10.6
+system_Yosemite=10.10
+system_Sierra=10.12
+system_Lion=10.7
+system_Mavericks=10.8.5
+current_os=`sw_vers | awk '/ProductVersion/ {print $2}'`
+systemVersion=${current_os:0:4}
+echo $systemVersion
+systemVersionSupport=${current_os:0:5}
+echo $systemVersionSupport
+if [ $systemVersion = $system_Leopard ] || [ $systemVersion = $system_SnowLeopard ]; then
+sudo rm -rf /System/Library/Extensions/BMUSBCDCACMData15.3.12.kext
+sudo rm -rf /System/Library/Extensions/BMUSBCDCACMDataMac10.12.kext
+kextload /System/Library/Extensions/BMUSBCDCACMData.kext
+kextload /System/Library/Extensions/KYTXUSBModemCDC32.kext
+kextload /System/Library/Extensions/KYTXUSBModemData32.kext
+else
+if [ $systemVersionSupport = $system_Sierra ]; then
+sudo rm -rf /System/Library/Extensions/BMUSBCDCACMData15.3.12.kext
+kextload /System/Library/Extensions/BMUSBCDCACMDataMac10.12.kext
+else
+sudo rm -rf /System/Library/Extensions/BMUSBCDCACMDataMac10.12.kext
+kextload /System/Library/Extensions/BMUSBCDCACMData15.3.12.kext
+fi
+sudo rm -rf /System/Library/Extensions/BMUSBCDCACMData.kext
+kextload /System/Library/Extensions/BMUSBCDCACMData15.3.12.kext
+kextload /System/Library/Extensions/KYTXUSBModemCDC32.kext
+kextload /System/Library/Extensions/KYTXUSBModemData32.kext
+fi
+exit 0
+
+
+
